@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadow Snake</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="game-container">
+        <div class="score-board">
+            <span>SCORE: <span id="score">00</span></span>
+            <span class="title">SHADOW_SNAKE</span>
+            <span>TIME: <span id="timer">00:00</span></span>
+           <span>HI-SCORE: <span id="hiscore">00</span></span>
+        </div>
+        <div id="game-modal" class="modal-overlay">
+        <div class="modal-content">
+            <h2 id="modal-title">SHADOW_SNAKE</h2>
+            <p id="modal-message">READY TO PLAY?</p>
+            <button id="start-btn">START GAME</button>
+        </div>
+    </div>
+    
+        <div id="game-board"></div>
+
+        <div class="controls-hint">
+            USE ARROW KEYS TO NAVIGATE
+        </div>
+    </div>
+
+    <script src="scrript.js"></script>
+</body>
+</html>
