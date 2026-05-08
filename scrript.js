@@ -35,6 +35,7 @@ function initBoard() {
         const cell = document.createElement('div');
         cell.className = 'cell';
         board.appendChild(cell);
+        grid.push(cell);
     }
 }
 
