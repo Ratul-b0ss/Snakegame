@@ -27,17 +27,15 @@ function updateSpeedFromDropdown() {
 
 function initBoard() {
     board.innerHTML = '';
-    columns = Math.floor(board.clientWidth / CELL_SIZE);
-    rows = Math.floor(board.clientHeight / CELL_SIZE);
-    board.style.gridTemplateColumns = `repeat(${columns}, 1fr)`;
-    grid = Array.from({ length: rows }, () => 
-        Array.from({ length: columns }, () => {
-            const cell = document.createElement('div');
-            cell.className = 'cell';
-            board.appendChild(cell);
-            return cell;
-        })
-    );
+    const cols = Math.floor(board.clientWidth / CELL_SIZE);
+    const rows = Math.floor(board.clientHeight / CELL_SIZE);
+    const totalCells = cols * rows;
+
+    for (let i = 0; i < totalCells; i++) {
+        const cell = document.createElement('div');
+        cell.className = 'cell';
+        board.appendChild(cell);
+    }
 }
 
 const updateCell = (pos, className, add = true) => {
