@@ -14,6 +14,7 @@
     --snake-head: #ffffff;
     --snake-body: #444444;
     --food-color: #ffffff;
+    --cell-size : 25px;
     
     /* Transitions */
     --transition-fast: 0.2s ease;
